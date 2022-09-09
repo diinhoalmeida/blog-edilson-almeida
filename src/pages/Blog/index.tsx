@@ -33,7 +33,7 @@ const Blog = () => {
                 blog ?
                 <div className='blog-wrap'>
                     <header>
-                        <p className='blog-date'>Published {blog.createdAt}</p>
+                        <p className='blog-date'>Publicado em {blog.createdAt}</p>
                         <h1>{blog.title}</h1>
                         <div className='blog-subCategory'>
                         {blog?.subCategory.map((category: string, i: number) => (
