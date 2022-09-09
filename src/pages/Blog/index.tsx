@@ -8,7 +8,6 @@ import { blogList } from '../../config/data';
 import './style.css';
 import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/default-highlight';
 import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism'
-import docco from 'react-syntax-highlighter/dist/esm/styles/hljs/docco';
 
 const Blog = () => {
     const {id}: any = useParams();
@@ -21,6 +20,8 @@ const Blog = () => {
             setBlog(blog);
         }
     }, [])
+
+    const teste: any = dark;
 
     return (
         <div>
@@ -65,7 +66,7 @@ const Blog = () => {
                                             return (
                                             <SyntaxHighlighter
                                                 children={String(children).replace(/\n$/, "")}
-                                                style={dark}
+                                                style={teste}
                                                 PreTag='div'
                                                 {...props}
                                             />
