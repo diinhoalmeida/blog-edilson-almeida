@@ -21,7 +21,8 @@
     overflow: hidden;
     font-size: .8rem;
     padding-right: .6rem;
-    color: #a9a9a9;
+    color: #010326ab;
+    font-weight: 500;
 }
 
 .blogItem-description::before {

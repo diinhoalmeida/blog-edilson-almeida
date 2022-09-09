@@ -1,5 +1,5 @@
 .searchBar-wrap {
-    background-color: #f0f0f0;
+    background-color: #393E59;
     width: fit-content;
     margin: 2.5rem auto 4rem auto;
     padding: 0.5rem;
@@ -15,8 +15,8 @@
 }
 
 .searchBar-wrap input {
-    background-color: #f0f0f0;
     outline: none;
+    background-color: rgb(255, 255, 255, 0);
     border: none;
 }
 
