@@ -12,10 +12,10 @@ const SearchBar = ({ value, setSearchKey, clearSearch, handleSearchSubmit }: ISe
     return (
         <div className="searchBar-wrap">
             <form onSubmit={handleSearchSubmit}>
-                <input onChange={setSearchKey} type="text" placeholder="Search By Category" value={value} />
+                <input onChange={setSearchKey} type="text" placeholder="Buscar por Categoria" value={value} />
             </form>
             {value && <span onClick={clearSearch}>X</span>}
-            <button>Go</button>
+            <button>Buscar</button>
         </div>
     )
 }

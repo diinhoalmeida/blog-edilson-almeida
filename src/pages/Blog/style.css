@@ -10,9 +10,17 @@
 .blog-wrap {
     max-width: 700px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.blog-wrap-markdown-container {
+    padding: 1em;
+}
+
+.blog-wrap-markdown-items p {
+    text-align: justify;
+    font-size: 0.9em;
+    color: #010326;
+    font-weight: 500;
 }
 
 .blog-wrap header {
