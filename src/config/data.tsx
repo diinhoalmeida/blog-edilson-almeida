@@ -111,7 +111,7 @@ export const blogList: IBlogList[] = [
           subtopic: '3.1. arr.length - 1?'
         },
         {
-          paragraph: `Oxe, BUT WHY “arr.length - 1”? Porque no array temos 13 itens, então o “arr.length” nos retorna 13, é certo que iremos percorrê-lo posteriormente. O primeiro item de um array se encontra não na posição 1, mas no "arr[0]', então no caso do nosso array o último item estará no "arr[12]" e não "arr[12]": `
+          paragraph: `Oxe, BUT WHY “arr.length - 1”? Porque no array temos 13 itens, então o “arr.length” nos retorna 13, é certo que iremos percorrê-lo posteriormente. O primeiro item de um array se encontra não na posição 1, mas no "arr[0]', então no caso do nosso array o último item estará no "arr[12]" e não "arr[13]": `
         },
         {
           tomarkdown: `
@@ -138,7 +138,7 @@ export const blogList: IBlogList[] = [
           `
         },
         {
-          paragraph: `Start agora é menor que end, atribuímos 0 a ele e ao “end = arr.length - 1” resultando em 12. Para a busca binária funcionar temos de encontrar o meio do nosso array, é daqui que partimos a busca, um para esquerda, outro para direita. Usamos o “Math.floor” para retornar o menor número inteiro, por exemplo, se o valor é 3,5, retorna 3, mas no nosso caso aqui retorna um valor inteiro “mid = 6”. Sempre que o loop voltar a este ponto teremos novos valores de start e end;`
+          paragraph: `Start agora é menor que end, atribuímos 0 a ele e ao “end = arr.length - 1” resultando em "12". Para a busca binária funcionar temos de encontrar o meio do nosso array, é daqui que partimos a busca, um para esquerda, outro para direita. Usamos o “Math.floor” para retornar o menor número inteiro, por exemplo, se o valor é "3,5", retorna "3", mas no nosso caso aqui retorna um valor inteiro “mid = 6”. Sempre que o loop voltar a este ponto teremos novos valores de start e end;`
         },
         {
           tomarkdown: 
@@ -148,7 +148,7 @@ export const blogList: IBlogList[] = [
           `
         },
         {
-          paragraph: `Começamos com um if na linha 8, se já cairmos no valor setado em target já retornamos a posição mid. “array[mid = 6]” é 4, então se “target = 4”, é pau, é pedra, é o fim do caminho.`
+          paragraph: `Começamos com um if se já cairmos no valor setado em target já retornamos a posição mid. “array[mid = 6]” é 4, então se “target = 4”, é pau, é pedra, é o fim do caminho.`
         },
         {
           tomarkdown: 
@@ -170,7 +170,7 @@ export const blogList: IBlogList[] = [
           subtopic: '3.3. Math.floor(number):'
         },
         {
-          paragraph: `O loop irá acontecer novamente desde o “while”, então retomamos a linha 6, porém o start recebeu +1, o retorno de “mid = Math.floor((1 + 12) / 2)” será 6,5, arredondado para baixo será 6. Retornamos ao “mid = 6”, o mesmo de antes, erramos? Não, o que acontece é que agora a busca será feita sempre a partir do 6 até encontrar a posição “mid = 10” em que o “target = 8” está, se “start += 1” novamente, então a busca será feita a partir de “mid = Math.floor((2 + 12) / 2)”, ou seja, agora “mid = 7”.`
+          paragraph: `O loop irá acontecer novamente desde o “while”, então retomamos a linha 6, porém o start recebeu +1, o retorno de “mid = Math.floor((1 + 12) / 2)” será "6,5", arredondado para baixo será 6. Retornamos ao “mid = 6”, o mesmo de antes, erramos? Não, o que acontece é que agora a busca será feita sempre a partir do 6 até encontrar a posição “mid = 10” em que o “target = 8” está, se “start += 1” novamente, então a busca será feita a partir de “mid = Math.floor((2 + 12) / 2)”, ou seja, agora “mid = 7”.`
         },
         {
           tomarkdown: 
